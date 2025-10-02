@@ -14,7 +14,7 @@ A comprehensive MCP (Model Context Protocol) server for PowerPoint manipulation 
 
 ### Example
 
-#### Pormpt
+#### Prompt
 
 <img width="1280" alt="650f4cc5d0f1ea4f3b1580800cb0deb" src="https://github.com/user-attachments/assets/90633c97-f373-4c85-bc9c-a1d7b891c344" />
 
