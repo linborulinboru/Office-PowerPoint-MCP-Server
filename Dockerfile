@@ -13,7 +13,10 @@ COPY . .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Set working directory to /data for output files
+WORKDIR /data
+
 # Expose port if needed (not needed for stdio)
 
 # Set the entrypoint to run the MCP server
-ENTRYPOINT ["python", "ppt_mcp_server.py"]
+ENTRYPOINT ["python", "/app/ppt_mcp_server.py"]

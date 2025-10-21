@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ppt-mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ppt-mcp-server
+    ports:
+      - "8010:8000"
+    command: ["-t", "http", "--port", "8000"]
+    environment:
+      - PPT_TEMPLATE_PATH=/data/templates:/data/assets:/data/resources
+    working_dir: /data
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
